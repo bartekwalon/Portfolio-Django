@@ -1,0 +1,21 @@
+{% extends 'infos/main.html' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block links %}
+<a class="nav-link active" href="/">Strona główna</a>
+<a class="nav-link" href="/me">O mnie</a>
+<a class="nav-link" href="/contact">Kontakt</a>
+{% endblock %}
+
+{% block h1 %}{{ h1 }}{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <p>
+            {{ text }}
+        </p>
+    </div>
+</div>
+{% endblock %}
